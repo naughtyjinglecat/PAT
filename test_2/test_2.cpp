@@ -1,10 +1,12 @@
 #include<iostream>
+#include<string>
+using namespace std;
 
 
 int main(){
-    int a;
-    std::cout << "请输入a的数值：" << std::endl;
-    std::cin >> a;
-    std::cout <<"a = " << a << std::endl;
+    string a = "Hello World! ";
+    string b = "Programming is good!";
+    cout << a + b << endl;
+    cout << ((a == b) == false) << endl;
 	return 0;
 }
