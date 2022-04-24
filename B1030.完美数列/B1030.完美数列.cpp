@@ -1,5 +1,5 @@
 /*喜闻乐见没有满分TVT，21分，下次尝试二分查找来完成这个题目*/
-
+/*2022.04.25修正：for循环最后一次离开可能不是break离开而是循环次数用完离开，没有更新maxCount的数值，所以在离开for循环之后需要更新一次maxCount*/
 #include<cstdio>
 #include<algorithm>
 using namespace std;
@@ -25,8 +25,9 @@ int main(void){
                 m++;
             }
         }
-        
+
     }
+    maxCount = (M - m) > maxCount ? (M - m) : maxCount;
     printf("%d\n", maxCount);
     return 0;
 }
