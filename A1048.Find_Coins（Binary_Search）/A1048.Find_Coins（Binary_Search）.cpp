@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<algorithm>
 using namespace std;
-/*注意跳出循环的条件，25分*/
+/*注意跳出循环的条件，25分,海星*/
 
 /*利用二分查找查询某金额的硬币,，若查询失败，则返回-1*/
 int binarySearch(int coins[],int length, int value){
@@ -46,6 +46,7 @@ int main(void){
             break;
         }
     }
+    
     if(sign == false){
         printf("No Solution\n");
     }
