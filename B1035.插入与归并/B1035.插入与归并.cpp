@@ -40,7 +40,6 @@ int main(void){
     /*如果次数列是归并排序，则标记isMerge为true，否则为false*/
     bool isMerge = true;
     /*局部有序则标志为true，否则标志为false*/
-    // bool localSorted;
     int *sequence, *processing;
     /*入果在该分组数量下，该排序符合归并排序，则标志isfittmerge为true ，否则为false*/
     bool isfitmerge = true;
@@ -54,20 +53,6 @@ int main(void){
     for(int i = 0; i < n; i++){
         scanf("%d", processing + i);
     }
-    // for(int i = 0; i < n; i += 2){
-    //     if(i != n - 1){
-    //         localSorted = isSorted(processing + i, 1);
-    //     }
-    //     else{
-    //         localSorted = isSorted(processing + i, 2);
-    //     }
-    //     /*如果没有局部有序，则该排序不是归并排序*/
-    //     if(localSorted == false){
-    //         isMerge = false;
-    //         break;
-    //     }
-    // }
-    /*价差该排序是否满足归并排序*/
     isMerge = isAdaptToMerge(processing, n, 2);
     if(isMerge == true){
         printf("Merge Sort\n");
