@@ -1,8 +1,7 @@
 #include<cstdio>
 #include<string.h>
 
-//为了搞快点所以代码结构很糟糕，没有封装函数，但是好在一遍过，不过以后得注意结构问题，以后得封装函数
-
+//为了搞快点所以代码结构很糟糕，没有封装函数，但是好在一遍过，不过以后得注意结构问题，以后得封装函数 25分
 typedef struct node{
     int data;
     int next;
