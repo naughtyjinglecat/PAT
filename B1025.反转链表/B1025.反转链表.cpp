@@ -58,5 +58,6 @@ int main(void){
             printf("%05d %d %d\n", addresses[i], nodes[addresses[i]].data, nodes[addresses[i]].next);
         }
     }
+    free(addresses);
     return 0;
 }
