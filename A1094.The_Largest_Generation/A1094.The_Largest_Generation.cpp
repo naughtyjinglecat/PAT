@@ -55,5 +55,6 @@ int main(void){
     }
     printf("%d %d\n", level_count[max_level], max_level+1);
     // delete(members);
+    
     return 0;
 }
