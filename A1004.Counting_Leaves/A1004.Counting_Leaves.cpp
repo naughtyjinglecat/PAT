@@ -37,6 +37,7 @@ void BFS(queue<int> &Q, kin kins[], int level){
                 for(int j = 0; j < kins[temp].k; j++){
                     Q.push(kins[temp].children[j]);
                 }
+                free(kins[temp].children);
             }
         }
         BFS(Q, kins, level+1);
